@@ -39,7 +39,7 @@ export class TccDBusClientService implements OnDestroy {
   private tccDBusInterface: TccDBusController;
   private isAvailable: boolean;
   private timeout: NodeJS.Timeout;
-  private updateInterval = 500;
+  private updateInterval = 2000;
 
   public available = new Subject<boolean>();
   public tuxedoWmiAvailable = new BehaviorSubject<boolean>(true);
