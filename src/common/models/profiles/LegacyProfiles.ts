@@ -11,10 +11,10 @@ export const defaultProfiles: ITccProfile[] = [
             useBrightness: false
         },
         cpu: {
-            onlineCores: undefined,
+            onlineCores: 8,
             useMaxPerfGov: false,
-            scalingMinFrequency: undefined,
-            scalingMaxFrequency: undefined,
+            scalingMinFrequency: 400000,
+            scalingMaxFrequency: 4700000,
             governor: 'powersave', // unused: see CpuWorker.ts->applyCpuProfile(...)
             energyPerformancePreference: 'balance_performance',
             noTurbo: false
@@ -41,10 +41,10 @@ export const defaultProfiles: ITccProfile[] = [
             useBrightness: false
         },
         cpu: {
-            onlineCores: undefined,
+            onlineCores: 8,
             useMaxPerfGov: false,
-            scalingMinFrequency: undefined,
-            scalingMaxFrequency: -1,
+            scalingMinFrequency: 400000,
+            scalingMaxFrequency: 4500000,
             governor: 'powersave', // unused: see CpuWorker.ts->applyCpuProfile(...)
             energyPerformancePreference: 'balance_performance',
             noTurbo: false
@@ -73,8 +73,8 @@ export const defaultProfiles: ITccProfile[] = [
         cpu: {
             onlineCores: undefined,
             useMaxPerfGov: false,
-            scalingMinFrequency: 0,
-            scalingMaxFrequency: 0,
+            scalingMinFrequency: 400000,
+            scalingMaxFrequency: 1200000,
             governor: 'powersave', // unused: see CpuWorker.ts->applyCpuProfile(...)
             energyPerformancePreference: 'balance_performance',
             noTurbo: false
