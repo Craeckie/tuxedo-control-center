@@ -26,7 +26,7 @@ export class StateSwitcherWorker extends DaemonWorker {
     private currentState: ProfileStates;
 
     constructor(tccd: TuxedoControlCenterDaemon) {
-        super(2000, tccd);
+        super(3000, tccd);
     }
 
     public reset() {

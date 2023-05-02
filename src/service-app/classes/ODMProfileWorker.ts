@@ -24,7 +24,7 @@ import { TuxedoIOAPI as ioAPI, ObjWrapper} from '../../native-lib/TuxedoIOAPI';
 export class ODMProfileWorker extends DaemonWorker {
 
     constructor(tccd: TuxedoControlCenterDaemon) {
-        super(1000, tccd);
+        super(2000, tccd);
     }
 
     public onStart(): void {

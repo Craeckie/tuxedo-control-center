@@ -39,7 +39,7 @@ export class FanControlWorker extends DaemonWorker {
     private fansMinSpeedHWLimit: number = 0;
 
     constructor(tccd: TuxedoControlCenterDaemon) {
-        super(1000, tccd);
+        super(3000, tccd);
     }
 
     private initHardwareCapabilities() {
